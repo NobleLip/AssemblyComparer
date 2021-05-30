@@ -20,9 +20,21 @@ In this project i decided to use SIMD instructions to see how the clock cicles v
 
 **(The project just uses the xmm and ymm, i didnt use Zmm for lack of a computer it a CPU that uses AVX-512)**
 
-First it was presented to me a **Simple Function in C++** :
+First it was presented to me a **Simple Function in C++** 
 
-![Given Function](/img/Funct.png)
+```
+void binarize(unsigned char *pt, unsigned char limit, int len)
+{
+	for(int x=0;x<len;x++)
+	{
+		if(pt[x]<limite){
+			pt[x] = 0;		
+		}else{
+			pt[x] = 255;
+		}
+	}
+}
+```
 
 Then i started the project, first i had to do a research, since i lack the proper instructions to made this project work, and i encounter the main instruction:
 
