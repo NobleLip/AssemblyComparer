@@ -18,8 +18,6 @@
 
 In this project i decided to use SIMD instructions to see how the clock cicles vary from C++ to SIMD.
 
-**(The project just uses the xmm and ymm, i didnt use Zmm for lack of a computer it a CPU that uses AVX-512)**
-
 First it was presented to me a **Simple Function in C++** 
 
 ```
@@ -36,6 +34,33 @@ void binarize(unsigned char *pt, unsigned char limit, int len)
 }
 ```
 
+
 Then i started the project, first i had to do a research, since i lack the proper instructions to made this project work, and i encounter the main instruction:
 
 * PCMPGTB (Compare Packed Signed Integers for Greater Than)
+
+After this , it was just programming it using all the SIMD registers that i had available.
+
+For Array it length bigger than:
+
+	* **32 Bytes** : It uses Ymm, Xmm and Compares one by one.
+	* **16 Bytes** : Xmm and Compares one by one.
+	* **Less than 16 Bytes** : Compares one by one.
+
+##Analyze Clock Cycles
+
+After all is properly working i started to test the values by counting the clock cycles used in each function, but i noticed that the CPU sometimes stopped the program because it was needed for more important tasks, so i had to ignore the Max number of clock and the average number since the max would not give me a accurate number, soo i had to look for the median of all the results.
+
+####Clock Cicles in C++**
+
+![C++](/img/ProvaC.png)
+
+####Clock Cicles in Assembly**
+
+![Assembly](/img/ProvaAssembly.png)
+
+####Comparing Values
+
+![Comapred](/img/GRaficos.png)
+
+![Differences](/img/Diferen.png)
