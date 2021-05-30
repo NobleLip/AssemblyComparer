@@ -43,9 +43,9 @@ After this , it was just programming it using all the SIMD registers that i had 
 
 For Array it length bigger than:
 
-	* **32 Bytes** : It uses Ymm, Xmm and Compares one by one.
-	* **16 Bytes** : Xmm and Compares one by one.
-	* **Less than 16 Bytes** : Compares one by one.
+* **32 Bytes** : It uses Ymm, Xmm and Compares one by one.
+* **16 Bytes** : Xmm and Compares one by one.
+* **Less than 16 Bytes** : Compares one by one.
 
 ##Analyze Clock Cycles
 
@@ -53,14 +53,14 @@ After all is properly working i started to test the values by counting the clock
 
 ####Clock Cicles in C++**
 
-![C++](/img/ProvaC.png)
+![C++](/img/ProvaC.PNG)
 
 ####Clock Cicles in Assembly**
 
-![Assembly](/img/ProvaAssembly.png)
+![Assembly](/img/ProvaAssembly.PNG)
 
 ####Comparing Values
 
-![Comapred](/img/GRaficos.png)
+![Comapred](/img/GRaficos.PNG)
 
-![Differences](/img/Diferen.png)
+![Differences](/img/Diferen.PNG)
