@@ -48,8 +48,7 @@ For Array it length bigger than:
 * **Less than 16 Bytes** : Compares one by one.
 
 ## Analyze Clock Cycles
-
-After all is properly working i started to test the values by counting the clock cycles used in each function, but i noticed that the CPU sometimes stopped the program because it was needed for more important tasks, so i had to ignore the Max number of clock and the average number since the max would not give me a accurate number, soo i had to look for the median of all the results.
+After everything is properly working i started to test the values by counting the clock cycles used in each function, but i noticed that the CPU sometimes stopped the program because it was needed for more important tasks, so i had to ignore the Max number of clock and the average number since the max would not give me a accurate number, i had to look for the median of all the results.
 
 #### Clock Cicles in C++
 
