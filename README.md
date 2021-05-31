@@ -65,3 +65,5 @@ Even tho the values look very simillar in the graphs , they are thousands in ass
 ![Comapred](/img/GRaficos.PNG)
 
 ![Differences](/img/Diferen.PNG)
+
+In Conclusion if we compare the medians we get that SIMD in Assembly compared to C++ uses 32 times less CPU Clocks, its a huge number if we are working it millions and millions of values!
