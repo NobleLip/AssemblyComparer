@@ -18,7 +18,7 @@
 
 In this project i decided to use SIMD instructions to see how the clock cicles vary from C++ to SIMD.
 
-First it was presented to me a **Simple Function in C++** 
+First it was presented to me a **Simple Function in C++ To Do In Assembly Using SIMD** 
 
 ```
 void binarize(unsigned char *pt, unsigned char limit, int len)
